@@ -1,0 +1,52 @@
+body
+{
+    background-color: #f8fff2;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1
+{
+    color: #009488
+}
+
+li
+{
+    color: #ffcc5e
+}
+
+nav
+{
+    border-top: 1px solid #00524b;
+}
+
+nav ul li
+{
+    display: inline-block;
+}
+
+section,form
+{
+    margin-left: 100px;
+    width: 1000px;
+}
+
+form
+{
+    width: 300px;
+}
+
+label,select
+{
+    display: inline-block;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.hide
+{
+    display:none;
+}

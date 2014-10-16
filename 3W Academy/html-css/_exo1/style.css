@@ -1,0 +1,130 @@
+.P1 {
+	text-align: center;
+	color:blue; 
+	font-style: italic;
+	font-size: 25px;
+	font-family: arial;
+	text-align: center;
+	border-style: solid;
+	border-color: #6495ED;
+	border-radius: 1px;
+	background-color: #BCD2EE;
+}
+
+.fleur {
+	width: 512px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.cadre {
+	height:20px; 
+	width :400px;
+	border-style: solid;
+	border-color: #6495ED;
+	border-radius: 1px;
+	background-color: #BCD2EE;
+	font-family: arial;
+}
+
+.cadre_ {
+	height:20px; 
+	width :400px;
+	border-style: solid;
+	border-color: #6495ED;
+	border-radius: 1px;
+	background-color: #BCD2EE;
+	font-family: arial;
+	font-size:15px;
+}
+
+.cadre2 {
+	height:20px; 
+	width :400px;
+	border-style: solid;
+	border-color: #6495ED;
+	border-radius: 1px;
+	background-color: #BCD2EE;
+	font-family: arial;
+	font-size: 10px;
+	font-style: italic;
+	text-align: left;
+}
+
+.F_produit {
+	box-shadow: rgba(0,0,0,0.2) 10px 10px;
+	width: 250px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+ 
+}
+
+.text {
+	border:2px solid;
+	font-family: Tahoma, sans-serif;
+	font-size: 25px;
+	color:red;
+	box-shadow: 10px 10px 10px #000000;
+
+}
+
+.text_prix {
+	border:2px solid;
+	font-family: Tahoma, sans-serif;
+	font-size: 15px;
+	color:red;
+	box-shadow: 2px 2px 2px #000000;
+	width: 60px;
+	font-style: italic;
+
+	
+}
+
+li {
+	color:black;
+	font-family: arial;
+}
+
+
+
+
+/* essai tableau dans le "produit" */
+
+.div1 {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: red;
+
+}
+
+.div2 {
+	float: left;
+	width: 520px;
+	background-color: blue;
+	margin: 20px 20px 20px 20px;
+	font-family: arial;
+}
+
+.div3 {
+	float: left;
+	width: 200px;
+	background-color: yellow;
+	margin: 20px 20px 20px 20px;
+	font-family: arial;
+
+
+}
+
+.clear {
+	clear: both;
+	background-color: black;
+	border-width: 2px;
+	border-color: green;
+	border-style: dashed;
+
+}

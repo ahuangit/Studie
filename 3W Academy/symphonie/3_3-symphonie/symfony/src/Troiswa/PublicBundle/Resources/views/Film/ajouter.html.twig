@@ -1,0 +1,75 @@
+{% extends 'TroiswaPublicBundle::layout.html.twig' %}
+
+{% block content %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+        <div class="flash-notice">
+            <div class="alert alert-success">{{ flashMessage }}</div>
+        </div>
+    {% endfor %}
+
+    <br>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            {{ form_start(form, {'attr' : {'novalidate' : 'novalidate'} } ) }}
+
+                <div class="form-group">
+                    {{ form_label(form.titre, null, {'label_attr' : {'class' : 'essai'} } ) }}
+                    {{ form_errors(form.titre) }}
+                    {{ form_widget(form.titre, {'attr' : {'class' : 'form-control'} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.synopsis) }}
+                    {{ form_errors(form.synopsis) }}
+                    {{ form_widget(form.synopsis, {'attr' : {'class' : 'form-control'} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.description) }}
+                    {{ form_errors(form.description) }}
+                    {{ form_widget(form.description, {'attr' : {'class' : 'form-control'} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.dateCreation) }}
+                    {{ form_errors(form.dateCreation) }}
+                    {{ form_widget(form.dateCreation, {'attr' : {'class' : 'form-control'} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.spectateur, 'Note des spectateurs') }}
+                    {{ form_errors(form.spectateur) }}
+                    {{ form_widget(form.spectateur, {'attr' : {'class' : 'form-control'} } ) }}
+                    <div id="note"></div>
+                </div>
+
+            <div class="form-group">
+                {{ form_label(form.categorie, 'Note des spectateurs') }}
+                {{ form_errors(form.categorie) }}
+                {{ form_widget(form.categorie, {'attr' : {'class' : 'form-control'} } ) }}
+                <div id="note"></div>
+            </div>
+
+
+                {{ form_widget(form.ajouter, {'attr': {'class' : 'btn btn-primary'} } ) }}
+
+            {{ form_end(form) }}
+        </div>
+    </div>
+    
+{% endblock %}
+
+
+{% block javascripts %}
+    <script src="{{ asset('js/lib/jquery.raty.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#note').raty({
+                path: '{{ app.request.basePath }}/js/lib/images',
+                scoreName: '{{ form.vars.name }}[spectateur]'
+            });
+        });
+    </script>
+{% endblock %}

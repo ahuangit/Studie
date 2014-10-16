@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Dimensionner ses fontes avec rem</title>
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		document.title="Fonts en rem";
+	</script>
+	<style type="text/css">
+html { font-size: 62.5%; } 
+	body { /* =14px */
+	  font-size: 14px;
+	  font-size: 1.4rem;
+	  font-family:'Open sans', sans-serif;
+	  margin:0;
+	
+	}
+	h1   { /* =24px */
+	  font-size: 24px;
+	  font-size: 2.4rem;
+	  font-weight:lighter;
+	}
+	p,h1{
+		width:430px;
+		margin:auto;
+	}
+	p{
+		text-align:justify;
+	}
+	h1{
+		margin-bottom:10px;
+		border-bottom:solid 1px #999;
+		text-align:center;
+	}
+	span{
+		font-size: 14px;
+		font-size: 1.4rem;
+		font-family:'Open sans', sans-serif;
+		margin-left:3px;
+		color:#000;
+	}
+	.fa{
+		display:block;
+		line-height:1.35em;
+		
+	}
+	.fa-quote-left{
+		color:#3A89B0;
+	}
+	span+span.fa,h1 i{
+		display:inline-block!important;
+		color:#3A89B0;
+	}
+	noscript{
+		line-height:50px;
+		display:block;
+		text-align:center;
+		font-size:1.4em;
+		background-color:#FFF7AD;
+		
+	}
+	noscript em{
+		display:inline-block!important;
+		color:#FFA200;
+		
+		
+	}
+	noscript .fa{
+		margin-right:3px;
+		vertical-align:middle;
+	}
+	
+	</style>
+</head>
+<body>
+<noscript>
+
+	<em class="fa fa-exclamation-triangle fa-2x"></em>Pour bien profiter de la nivagation vous devez activer "javascript"
+
+</noscript>
+	<h1><i class="fa fa-book fa-fw"></i>Dimensionner ses fontes avec "rem"</h1>
+	<p  class="fa fa-quote-left fa-1x">
+		<span>
+		Déterminer quelle unité de mesure choisir pour la taille de notre texte peut mener à un débat houleux, même de nos jours. Malheureusement, il existe toujours des avantages et inconvénients qui rendent ces différentes techniques peu désirables. La question est alors de savoir quelle solution est la moins pire.
+		</span>
+		<span class="fa fa-quote-right fa-1x">
+	</span>
+	</p>
+</body>
+</html>

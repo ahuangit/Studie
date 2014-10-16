@@ -1,0 +1,1 @@
+<?php include VIEWS_DIR . '../controllers/message/index.php' ?>

@@ -1,0 +1,49 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+table
+{
+	margin : 50px 0 50px 25px;
+}
+
+table, tr,th
+{
+	border : 1px solid;
+	padding : 10px;
+}
+
+.titre
+{
+	color : green;
+	text-align: center;
+}
+
+	.nom
+	{
+		width : 100px;
+		text-align: center;
+	}
+	.comment
+	{
+		width : 1050px;
+		text-align: absolute;
+	}
+
+
+
+
+
+.newcomment
+{
+	margin-top : 100px;
+}
+
+
+
+
+

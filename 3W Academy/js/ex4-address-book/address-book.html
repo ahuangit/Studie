@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="css/adress-book.css">
+     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <title>Exercice JS</title>
+	 
+</head>
+<body>
+    <section>
+        <h1>Carnet d'adresses</h1>
+        <ul id="js-adress-book">
+        </ul>
+
+        <aside id="js-contact-details">
+        </aside>
+
+        <nav>
+            <ul class="menu">
+                <li><a id="js-add-contact" href="#">Ajouter un contact</a></li>
+                <li><a id="js-clear-address-book" href="#">Vider le carnet d'adresses</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+
+<div id="js-contact-form-wrapper" class="hide">
+    <form id="js-contact-form">
+        <ul>
+            <li><label for="civilite">Civilité :</label></li>
+            <select id="civile" name="civilite">
+                <option value="madam">Madame</option>
+                <option value="miss">Madmoiselle</option>
+                <option value="mister">Monsieur</option>
+            </select>
+
+            <li><label for="lastName">Nom :</label>
+            <input type="text" id="lastName" name="lastName"></li>
+            <li><label for="firstName">Prénom :</label>
+                <input type="text" id="firstName" name="firstName"></li>
+            <li><label for="telephone">Téléphone :</label>
+                <input type="text" id="telephone" name="telephone"></li>
+
+            <li><input type="button" value="Enrengistrer" id="js-save-button"></li>
+        </ul>
+
+
+
+    </form>
+</div>
+    <script type="text/javascript" src="js/utilies.js"></script>
+    <script type="text/javascript" src="js/adress-book.js"></script>
+
+</body>
+</html>

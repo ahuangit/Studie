@@ -1,0 +1,24 @@
+troiswa_public_homepage:
+    path:     /
+    defaults: { _controller: TroiswaPublicBundle:Main:index }
+
+troiswa_public_competences:
+    path:     /competences
+    defaults: { _controller: TroiswaPublicBundle:Main:competences }
+
+troiswa_public_contact:
+    path:     /contact
+    defaults: { _controller: TroiswaPublicBundle:Main:contact }
+
+troiswa_public_resource_film:
+    resource: "@TroiswaPublicBundle/Resources/config/routing/film.yml"
+
+troiswa_public_resource_acteur:
+    resource: "@TroiswaPublicBundle/Resources/config/routing/acteur.yml"
+
+troiswa_public_resource_categorie:
+    resource: "@TroiswaPublicBundle/Resources/config/routing/categorie.yml"
+
+troiswa_public_resource_admin:
+    resource: "@TroiswaPublicBundle/Resources/config/routing/admin.yml"
+    prefix:   /admin

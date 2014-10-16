@@ -1,0 +1,64 @@
+{% extends 'TroiswaPublicBundle::layout.html.twig' %}
+
+{% block content %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+        <div class="flash-notice">
+            <div class="alert alert-success">{{ flashMessage }}</div>
+        </div>
+    {% endfor %}
+
+    <br>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            {{ form_start(form, {'attr' : {'novalidate' : 'novalidate'} } ) }}
+
+                <div class="form-group">
+                    {{ form_label(form.prenom, null, {'label_attr' : {'class' : 'essai'} } ) }}
+                    {{ form_errors(form.prenom) }}
+                    {{ form_widget(form.prenom, {'attr' : {'class' : 'form-control'} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.nom) }}
+                    {{ form_errors(form.nom) }}
+                    {{ form_widget(form.nom, {'attr' : {'class' : 'form-control'} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.dateNaissance) }}
+                    {{ form_errors(form.dateNaissance) }}
+                    {{ form_widget(form.dateNaissance, {'attr' : {'class' : 'form-control'} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.sexe) }}
+                    {{ form_errors(form.sexe) }}
+                    {{ form_widget(form.sexe, {'attr' : {'class' : ''} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.nationalite) }}
+                    {{ form_errors(form.nationalite) }}
+                    {{ form_widget(form.nationalite, {'attr' : {'class' : 'form-control'} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.biographie) }}
+                    {{ form_errors(form.biographie) }}
+                    {{ form_widget(form.biographie, {'attr' : {'class' : 'form-control'} } ) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.fichier) }}
+                    {{ form_errors(form.fichier) }}
+                    {{ form_widget(form.fichier, {'attr' : {'class' : ''} } ) }}
+                </div>
+
+                {{ form_widget(form.ajouter, {'attr': {'class' : 'btn btn-primary'} } ) }}
+
+            {{ form_end(form) }}
+        </div>
+    </div>
+    
+{% endblock %}

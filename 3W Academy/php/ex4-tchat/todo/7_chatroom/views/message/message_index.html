@@ -1,0 +1,34 @@
+
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<div id="content">
+			<h1>Bienvenue !</h1>
+		</div>
+
+		<button id="btn">Clic</button>
+
+		<script type="text/javascript">
+
+			jQuery(document).ready(function($) {
+
+				$('#btn').click(function() {
+
+					$.ajax({
+						url: 'message_index.php',
+
+						success:function (html) {
+
+							$('#content').html(html);
+
+						}
+					});
+
+				});
+
+			});
+
+		</script>
+

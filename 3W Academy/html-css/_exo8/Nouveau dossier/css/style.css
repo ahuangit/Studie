@@ -1,0 +1,51 @@
+caption
+{
+	color : #3f606e;
+	font-weight: bold
+}
+
+table
+{
+	width : 600px;
+	margin : auto;
+}
+
+th
+{
+	background-color: #3f606e;
+	color : #ffffff;
+}
+
+table,th,td
+{
+	border:solid 1px #999;
+	border-collapse:collapse;
+	padding: 5px;
+}
+
+
+/* tr:nth-child(even | odd)*/
+
+.white
+{
+
+}
+
+.blue
+{
+	background-color: #a6cdde;
+	color : #6a8199;
+}
+
+
+
+
+
+
+/*  tr:nth-child(even | odd)
+	
+	p ~ p {}
+	p + p {}
+	section > article {}
+	ul > li > ul {}
+*/

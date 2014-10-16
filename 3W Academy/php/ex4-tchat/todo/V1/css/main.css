@@ -1,0 +1,68 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/** HEADER.PHP */ 
+
+	body
+	{
+		width : 100%;
+		margin : auto;
+	}
+
+	.header, .center
+	{
+		width : 1000px;
+		margin : 0 auto;
+	}
+
+
+	header
+	{
+		width : 100%;
+		padding : 15px 10px;
+		margin : 10px 0 0 0;
+		background-color : rgba(0,0,156,0.6);
+	}
+
+	h1
+	{
+		color : #fff;
+	}
+
+
+
+/** CONTENU CENTRER */
+
+
+
+
+
+
+/** INDEX.PHP TABLEAU */ 
+	
+.comments,.new,.login,.create
+{
+	width : 50%;
+	margin : 100px 0;
+    border: 5px solid red;
+}
+	
+	table
+	{
+		width : 50%;
+	}
+	
+		tr > :first-child
+		{
+			width : 35%;
+			border : 1px solid;
+		}
+
+		tr > :last-child
+		{
+			width : 65%;
+			border : 1px solid;
+		}

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>tab</title>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen+Mono|Oxygen:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<style type="text/css">
+		
+
+
+
+
+		@font-face {
+    font-family: 'alex_brushregular';
+    src: url('fonts/alexbrush/alexbrush-regular-webfont.eot');
+    src: url('fonts/alexbrush/alexbrush-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/alexbrush/alexbrush-regular-webfont.woff') format('woff'),
+         url('fonts/alexbrush/alexbrush-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+		}
+
+		td
+		{
+	font-family: 'alex_brushregular', Arial, sans-serif;
+		}
+
+
+
+		table{
+			width:800px;
+			margin:0 auto;
+			font:100% 'Oxygen',sans-serif;
+			font-weight:lighter;
+		}
+		table,th,td{
+			border:solid 1px #999;
+			border-collapse:collapse;
+			padding:4px;
+			text-align:center;
+		}
+		th{
+			background-color:#3B5998;
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>Les colspan &amp; Rowspan</caption>
+			<thead>
+				<tr>
+					<th><i class="fa fa-phone"></i></th>
+					<th><i class="fa fa-desktop"></i></th>
+					<th><i class="fa fa-video-camera"></i></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">Rowspan</td>
+					<td>Vos films</td>
+					<td>Grand écran</td>
+				</tr>
+				<tr>
+					<td>Contenu 1</td>
+					<td>Contenu 1</td>
+					
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">colspan</td>
+					<td>Contenu 3</td>
+					</tr>
+			</tfoot>
+		
+	</table>
+</body>
+</html>

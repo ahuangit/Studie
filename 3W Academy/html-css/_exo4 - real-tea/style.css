@@ -1,0 +1,360 @@
+@font-face
+{
+	font-family: "ginko";
+		src: url("image/fonts/GINKO.TTF");
+}
+
+@font-face
+{
+	font-family: "melbournebold";
+		src: url("image/fonts/Melbourne_bold_basic.orf");
+}
+@font-face
+{
+	font-family: "melbournelight";
+		src: url("image/fonts/Melbourne_light_basic.orf");
+}
+@font-face
+{
+	font-family: "melbourneregular";
+		src: url("image/fonts/Melbourne_regular_basic.orf");
+}
+
+.ginko
+{
+	font-family: "ginko";
+}
+
+.melbournebold
+{
+	font-family: "melbournebold";
+}
+
+.melbournelight
+{
+	font-family: "melbournelight";
+}
+
+.melbourneregular
+{
+	font-family: "melbourneregular";
+}
+
+
+
+
+a{
+	text-decoration: none;	
+}
+
+.m-auto{
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.w {
+	width: 1000px;
+}
+
+.f-l{
+	float:left;
+}
+
+.f-r{
+	float:right;
+}
+
+.accueil {
+	background-image: url(image/images/menu_hover.png);
+	background-repeat: no-repeat;
+	margin-left: auto;
+	background-position: top left 570px;
+}
+
+.accueil2{
+	padding-right: 150px;
+	margin-right: auto;
+}
+
+.tasse {
+	width : 300px;
+	margin-top: 125px;
+
+}
+
+.p1 section {
+	padding-bottom: 40px;
+}
+
+.h2 {
+	width : 588px;
+	margin-bottom : 20px;
+	margin-top: 125px;
+}
+
+body{
+	width: 1000px;
+	background-image: url(image/images/bg_body.jpg);
+	font-size: 12px;
+	src: url("image/fonts/Melbourne_regular_basic.otf");
+	font-family: "Melbourne_regular_basic";	
+	src :url("image/fonts/Melbourne_regular_basic.otf");
+}
+
+
+
+
+header {
+	background-image: url(image/images/bg_header.jpg);
+	background-repeat: no-repeat;
+	margin-bottom: 25px;
+	padding-bottom: 200px;
+	background-position: center top;
+}	
+
+
+.nav
+{
+	width : 1000px;
+	background-color: rgba(113,186,40,0.5);
+}
+
+
+
+
+.nav ul li {
+	width: 1000px;
+	margin : 0 auto;
+	display: inline;
+	font-size: 16px;
+	margin-right: 10px
+}
+
+.nav ul li a {
+	color : #ffffff;
+}
+
+header article h2
+{
+	margin-bottom: 10px
+;}
+
+
+
+section article a {
+	margin-right : 110px;
+}
+
+h1 img {
+	margin-top: 20px;
+}
+
+header section article a {
+	color : #017000;
+}
+
+
+.the,.chine,.detente {
+	width : 295px;
+}
+
+.the,.chine,.detente,h2 {
+	font-size : 23px;
+}
+
+.the,.chine,.detente,p {
+	font-size : 15px;
+}
+
+.the
+{
+	margin-left: 25px;
+}
+
+.chine,.detente {
+	margin-left : 30px;
+}
+
+
+/* p2 ################################################################################## */
+
+.child2_1
+{
+	width : 560px;
+	background-image : url(image/images/bg_news.jpg);
+	background-repeat: no-repeat;
+	margin-right: 40px;
+	padding-bottom: 40px;
+}
+
+.child2_1 nav
+{
+	margin-top: 80px;
+}
+
+.bg_date
+{
+	background-image: url(image/images/bg_date.png);
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	background-position: left 1px;
+	padding-bottom : 30px;
+	padding-top : 20px;
+	margin-top: -25px;
+	margin-left: 15px
+}
+
+.news1 a
+
+{
+		color : black;
+}
+
+.lire_suite{
+		color : #3d0000;
+		font-weight: italic;
+}
+
+
+.child2_1 h3
+{
+	margin-left : 65px;
+}
+
+.date
+{
+	margin-top : 4px;
+	margin-left : 12px;
+	width : 10px;
+	font-size : 16px;
+	color : #381111;
+	text-align: center;
+}
+
+
+.news2,.lire_suite
+{
+	margin-top : -23px;
+	margin-bottom : 7px;
+	margin-left : 50px;
+	font-size: 13px;
+}
+
+
+
+
+/* ################################################################################## */
+
+
+.bg_titre
+{
+	background-image: url(image/images/bg_titre);
+	background-repeat: no-repeat;
+	background-position: left 10px;
+}
+
+.child2_2
+{
+	width : 335px;
+}
+
+.child2_2a
+{
+	margin-top : 15px;
+	margin-bottom : 15px;
+}
+
+.child2_2 article h2
+{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.child2_2a nav ul li img
+{
+	margin-right: 8px;
+}
+
+.child2_2a nav ul li a
+{
+	color : #188407;
+	font-weight: bold;
+}
+
+.ville
+{
+	margin-left: 85px;
+}
+
+.ville2
+{
+	margin-left: 109px;
+}	
+
+.ville3
+{
+	margin-left: 93px;
+}
+
+
+
+
+
+
+.child2_2 article p
+{
+	font-size: 13px;
+	margin-bottom : 10px;
+}
+
+
+
+.inscris
+{
+	margin-top: 5px;
+	text-align: center;
+	width: 100px;
+}
+
+.inscris a
+{
+	color : white;
+	padding-top: 5px;
+}
+
+.bg
+{
+	background-image: url(image/images/bg_btn.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+	width: 103px;
+}
+
+
+
+
+
+.footer
+{
+	background-image : url(image/images/bg_footer.png);
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	margin-top: 20px;
+}
+
+.footer p
+{
+	margin-left: 55px;
+}
+
+.end2{
+	margin-left: 200px;
+	font-size: 13px;
+}		
+
+.end2 a
+{
+	color : #0b4700;
+	text-decoration: underline;
+}

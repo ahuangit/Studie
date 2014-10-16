@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {% for comp, info in competences %}
+         <p>
+             {{ comp }} <br>
+             <input data-fgColor="{{ info.couleur }}" type="text" value="{{ info.note }}" class="dial" data-readOnly=true data-max="10">
+         </p>
+        {% endfor %}
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{{ asset('js/jquery.knob.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".dial").knob();
+        });
+    </script>
+    </body>
+</html>

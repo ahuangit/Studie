@@ -1,0 +1,48 @@
+body{
+	font:100% sans-serif;
+}
+
+h1,section{
+	width:500px;
+	margin:0 auto 10px;
+	border :solid 1px #999;
+	padding:5px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-shadow:0 0 5px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+h1{
+	font-style:italic!important;
+	text-align:center;
+	font-weight:lighter;
+	font:150% georgia;
+	color:#3B5998;
+	background-color:rgba(243,255,160,0.7);
+	
+	
+}
+h1:before{
+	content:url(http://www.sitesinternetpascher.com/wp-content/uploads/2012/07/compatibilite_HTML5_CSS3.png);
+	vertical-align:middle;
+}
+section{
+	background-color:#FFF;
+}
+p{
+	margin:0;
+	text-align:center;
+}
+figcaption{
+	text-align:center;
+	font-size:80%;
+}
+figure{
+	margin:10px auto 10px;
+}
+figure img{
+	display:block;
+	margin:auto;
+}

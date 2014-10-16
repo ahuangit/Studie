@@ -1,0 +1,13 @@
+{% extends 'TroiswaPublicBundle::layout.html.twig' %}
+
+{% block content %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+        <div class="flash-notice">
+            <div class="alert alert-success">{{ flashMessage }}</div>
+        </div>
+    {% endfor %}
+
+    {{ form(form) }}
+    
+{% endblock %}

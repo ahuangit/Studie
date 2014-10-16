@@ -1,0 +1,15 @@
+body {
+	font-family: sans-serif;
+	color: #685656;
+}
+tr,td,th {
+    width: 50px;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}

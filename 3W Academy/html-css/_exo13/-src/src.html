@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="reset.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+
+	<title></title>
+</head>
+<body>
+
+	<canvas id="canvas" width="800" height="600">Texte</canvas>
+
+	<canvas id="smiley" width="800" height="600">Texte</canvas>
+
+	
+	<canvas id="morpion" width="900" height="900">Texte</canvas>
+
+
+
+	<script type="text/javascript">
+
+
+
+
+
+
+
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+
+context.fillStyle 	= "#333";
+context.fillRect	(10,10,780,580);
+
+context.fillStyle 	= "#ff0000";
+context.fillRect	(350,250,100,100);
+
+context.beginPath();
+context.arc			(200,300,100,0,Math.PI*2,true);
+context.fillStyle	="#999";
+context.fill();
+context.strokeStyle	="#fff";
+context.lineWidth 	= 5;
+context.stroke();
+
+
+
+context.beginPath();
+context.moveTo		(500,200);
+context.lineTo		(700,400);
+context.moveTo		(500,400);
+context.lineTo		(700,200);
+context.lineCap		= 'round';
+context.closePath();
+context.stroke();
+
+
+
+/**
+	CONNERIE =D
+*/
+
+var canvas = document.getElementById('smiley');
+var context = canvas.getContext('2d');
+
+context.beginPath();
+context.fillStyle 	= "#333";
+context.fillRect	(10,10,780,580);
+context.fillStyle 	= "#ff0000";
+context.fillRect	(100,100,100,100);
+context.fillStyle 	= "#ff0000";
+context.fillRect	(600,100,100,100);
+
+	/* NEZ */
+
+context.beginPath();
+context.arc			(400,300,50,0,Math.PI*2,true);
+context.fillStyle	="#ff0000";
+context.fill();
+context.strokeStyle	="#fff";
+context.lineWidth 	= 5;
+context.stroke();
+
+	/* BOUCHE */
+
+context.beginPath();
+context.fillStyle 	= "#ff0000";
+context.fillRect	(100,400,50,50);
+context.fillStyle 	= "#ff0000";
+context.fillRect	(150,450,500,50);
+context.fillStyle 	= "#ff0000";
+context.fillRect	(650,400,50,50);
+
+
+
+	/* MORPION */
+
+
+	/* TABLEAU */
+var canvas = document.getElementById('morpion');
+var context = canvas.getContext('2d');
+
+context.fillStyle 	= "#333";
+context.fillRect	(0,0,900,900);
+
+context.beginPath();
+context.strokeStyle	="#fff";
+
+	/* GRILLE TABLEAU */
+
+	for (x = 300 ; x <= 900; x = x + 300) {
+
+		context.beginPath();
+		context.strokeStyle	="#fff";
+		context.moveTo		( x ,0);
+		context.lineTo		( x ,900);
+		context.lineCap		= 'round';
+		context.closePath();
+		context.stroke();
+	}
+
+	for (y = 300 ; y <= 900; y = y + 300) {
+
+		context.beginPath();
+		context.strokeStyle	="#fff";
+		context.moveTo		( 0 , y );
+		context.lineTo		( 900, y);
+		context.lineCap		= 'round';
+		context.closePath();
+		context.stroke();
+	}
+
+
+		/* MORPION */
+		//MATH RANDOM : 1 = ROND - 2 = CROIX
+
+	/* VARIABLE DE CHAQUE POINT POUR LA CROIX */
+	var pos = 150;
+	var pos_point1 = 75;
+	var pos_point2 = 225;
+
+	var croix1 = 75;
+	var croix2 = 225;
+	var croix3 = 75;
+	var croix4 = 225;
+
+
+
+	var pos_bis = 450;
+	var pos_point1_bis = 375;
+	var pos_point2_bis = 525;
+
+	var croix1_bis = 375;
+	var croix2_bis = 525;
+	var croix3_bis = 375;
+	var croix4_bis = 525;
+
+
+	for (case1 = 150 ; case1 <= 750 ; case1 = case1 + 300) {
+				var random = Math.floor((Math.random() * 2) + 1);
+
+			for(case2 = 150 ; case2 <= 750 ; case2 = case2 + 300) {
+
+
+				if (random == 1) {
+
+					context.beginPath();
+					context.arc			(case1,pos,50,0,Math.PI*2,true);
+					context.fillStyle	="#ff0000";
+					context.fill();
+					context.strokeStyle	="#fff";
+					context.lineWidth 	= 5;
+					context.stroke();
+
+				} //END IF
+
+				else {
+
+					context.beginPath();
+					context.strokeStyle	="#fff";
+					context.moveTo		(case2,pos_bis);
+					context.lineTo		(croix1_bis,pos_point1_bis);
+
+					context.moveTo		(case2,pos_bis);
+					context.lineTo		(croix2_bis,pos_point1_bis);
+
+					context.moveTo		(case2,pos_bis);
+					context.lineTo		(croix3_bis,pos_point2_bis);
+					
+					context.moveTo		(case2,pos_bis);
+					context.lineTo		(croix4_bis,pos_point2_bis);
+					
+					context.lineCap		= 'round';
+					context.closePath();
+					context.stroke();
+
+				} //END ELSE
+
+			}
+
+
+
+		if (random == 1) {
+
+			context.beginPath();
+			context.arc			(case1,pos,50,0,Math.PI*2,true);
+			context.fillStyle	="#ff0000";
+			context.fill();
+			context.strokeStyle	="#fff";
+			context.lineWidth 	= 5;
+			context.stroke();
+
+		} //END IF
+
+		else {
+
+			context.beginPath();
+			context.strokeStyle	="#fff";
+			context.moveTo		(case1,pos);
+			context.lineTo		(croix1,pos_point1);
+
+			context.moveTo		(case1,pos);
+			context.lineTo		(croix2,pos_point1);
+
+			context.moveTo		(case1,pos);
+			context.lineTo		(croix3,pos_point2);
+			
+			context.moveTo		(case1,pos);
+			context.lineTo		(croix4,pos_point2);
+			
+			context.lineCap		= 'round';
+			context.closePath();
+			context.stroke();
+
+		} //END ELSE
+
+		//ON ADDITIONNE POUR LES POINT DE CROIX
+		croix1 = croix1 + 300;
+		croix2 = croix2 + 300;
+		croix3 = croix3 + 300;
+		croix4 = croix4 + 300;
+
+	} //END FOR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+
+</body>
+</html>
